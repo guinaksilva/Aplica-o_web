@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static' , path='delete_item_style.css') }}">
+    
+    <title> Delete um PC </title>
+</head>
+<body>
+    <main>
+        <h1> Tabela de PC's </h1>
+        <table>
+            <h2> Selecione o PC que deseja deletar do inventário: </h2>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do PC</th>
+                    <th> Data de entrada </th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td> Dell Inspiron All in one 24p </td>
+                    <td> 25/05/2024 </td>
+                    <td><button class="btn-delete" onclick="deleteUser(1)">Deletar</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td> iMac M1 24p </td>
+                    <td> 12/06/2024 </td>
+                    <td><button class="btn-delete" onclick="deleteUser(2)">Deletar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+
+
+    
+    <script>
+        function deleteUser(userId) {
+            if (confirm("Você tem certeza de que deseja deletar este PC?")) {
+                alert('PC com ID ' + userId + ' deletado.');
+                document.querySelector('tr[data-user-id="' + userId + '"]').remove();
+            }
+        }
+    </script>
+</body>
+</html>
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+    <title> Deletar um item </title>
+</head>
+<body>
+    <main>
+        <h1> Selecione o pc que deseja deletar do inventário:    </h1>
+        
+    </main>
+    
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/create_item_style.css">
+    <title>Adicionar um novo item</title>
+</head>
+<body>
+<main>
+    <h1>Adicionar Novo Item</h1>
+    <form id="itemForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="description">Descrição:</label>
+        <input type="text" id="description" name="description" required>
+        <button type="submit">Adicionar</button>
+        <a href="/pc_lista" class="btn-voltar">Voltar</a>
+    </form>
+</main>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.getElementById("itemForm");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+            const data = {
+                name: formData.get("name"),
+                description: formData.get("description")
+            };
+
+            fetch('/pcs', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Item adicionado com sucesso');
+                    window.location.href = '/pc_lista';
+                } else {
+                    throw new Error('Erro ao adicionar item');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Erro ao enviar os dados');
+            });
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+databases
+asyncpg
+pydantic
+passlib
+python-jose
+#pip install -r requirements.txt

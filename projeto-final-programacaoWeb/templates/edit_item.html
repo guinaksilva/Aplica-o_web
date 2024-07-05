@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/edit_item_style.css">
+    <title> Editar inventario </title>
+</head>
+<body>
+
+    <main>
+
+    <h1>Editar o inventário do pc</h1>
+    <form action="/edit-item/{{ item.id }}" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" value="{{ item.name }}" required>
+        <label for="quantity">Quantidade:</label>
+        <input type="number" id="quantity" name="quantity" value="{{ item.quantity }}" required>
+        <button type="submit">Atualizar</button>
+    </form>
+    </main>
+</body>
+</html>

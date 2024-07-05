@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="../static/criar_conta_style.css">
+</head>
+<body>
+    <main>
+        <h1>Criar Conta</h1>
+        <form action="/create-account" method="POST" onsubmit="mostrarAlerta(event)">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <button type="submit">Criar</button>
+        </form>
+        <a href="/login" class="btn-login">Já tem uma conta? Faça login</a>
+    </main>
+
+    <script>
+        function mostrarAlerta(event) {
+            event.preventDefault();
+            alert("Conta criada com sucesso");
+            event.target.submit();
+        }
+    </script>
+</body>
+</html>
