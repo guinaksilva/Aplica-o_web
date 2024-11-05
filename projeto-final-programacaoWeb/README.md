@@ -16,7 +16,7 @@ Docker (opcional)
 
 1. Clone o repositório:
    ```
-   git clone <   git clone <https://github.com/laceerdag/projeto-final-programacaoWeb.git>
+   git clone <   git clone <https://github.com/guinaksilva/projeto-final-programacaoWeb.git>
    cd projeto-final-programacaoweb
    ```
 
@@ -61,8 +61,12 @@ docker-compose up --build
 Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
 
 
-* **Gabriel Costa** - *Trabalho Inicial - back end* - [gabrielcosta](https://github.com/laceerdag)
-* **Lucas** - *Front-end* - [Lucas](https://github.com/lucasrso?tab=overview&from=2024-06-01&to=2024-06-20)
+* **Nakamura** - *Trabalho Inicial - back end* - [guilherme nakamura](https://github.com/guinaksilva)
+* **Erick** - *Front-end* - [)
+* **Julia** - *documentação*
+* **Andre** - *back end*
+* **Gabriel** - *front*
+* **Lianny** - *Front*
 
 
 ## 📄 Licença
@@ -71,7 +75,7 @@ Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](https://gith
 
 ## 🎁 Agradecimentos
 
-* Agradeço ao Professor Lucas por me fazer perder o sono 🫂;
+* Agradeço ao Professor Ofugi por me fazer perder o sono 🫂;
 
 ---
-⌨️ com ❤️ por [Gabriel](https://github.com/laceerdag)) 😊
+⌨️ com ❤️ por [Nakamura](https://github.com/guinaksilva)) 😊
