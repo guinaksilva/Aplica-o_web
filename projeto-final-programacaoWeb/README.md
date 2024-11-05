@@ -1,4 +1,4 @@
-# Projeto integrador - ofugi
+# Projeto integrador - Ofugi
 
 Este é um projeto web desenvolvido com FastAPI, SQLAlchemy e Jinja2. Ele fornece uma API para gerenciar PCs, com endpoints para criar, listar e deletar PCs. Além disso, inclui autenticação básica com OAuth2 e senhas hash.
 
