@@ -1,4 +1,4 @@
-# Projeto integrador - Ofugi
+# devolvimento web
 
 Este é um projeto web desenvolvido com FastAPI, SQLAlchemy e Jinja2. Ele fornece uma API para gerenciar logins, com endpoints para criar, listar e deletar logins. Além disso, inclui autenticação básica com OAuth2 e senhas hash.
 
